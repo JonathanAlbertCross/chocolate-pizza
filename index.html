@@ -9,10 +9,12 @@
   </head>
   <body>
     <header>
-      <div id="logo-header">
-        <img src="./img/logo.png" />
-        <h2>Delicious</h2>
-        <h5>The best food blog on the web</h5>
+      <div id="header1">
+        <img id="logo" src="./img/logo.png" />
+        <div id="logo-header">
+          <h2 id="main-title">Delicious</h2>
+          <h3>The best food blog on the web</h3>
+        </div>
       </div>
       <nav>
         <img src="./img/fb-icon.png" />
@@ -27,22 +29,49 @@
     </header>
     <hr />
     <main>
-      <div id="recipe-header"></div>
-        <h1>Chocolate Pizza</h1>
-        <h4>hosted on 15 DEC 2013/desserts</h4>
-      </div>
-      <div id="print">
-        <img src="./img/print-icon.png" />
-        <p>PRINT</p>
-      </div>
-      <div id="cake-img">
-        <img src="./img/choco-pizza.png" />
-      </div>
-      <article>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corrupti eveniet inventore rem velit ipsum esse tempora vero optio placeat eaque dolorum expedita nihil molestias aperiam, quo non assumenda quos sint dolore suscipit. Itaque, at fugit. Sequi quia corrupti officiis reprehenderit dicta minus similique? Asperiores fugit ea illum necessitatibus libero amet expedita, impedit officia porro quis eveniet eius, facilis voluptatem.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corrupti eveniet inventore rem velit ipsum esse tempora vero optio placeat eaque dolorum expedita nihil molestias aperiam, quo non assumenda quos sint dolore suscipit. Itaque, at fugit. Sequi quia corrupti officiis reprehenderit dicta minus similique? Asperiores fugit ea illum necessitatibus libero amet expedita, impedit officia porro quis eveniet eius, facilis voluptatem.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corrupti eveniet inventore rem velit ipsum esse tempora vero optio placeat eaque dolorum expedita nihil molestias aperiam, quo non assumenda quos sint dolore suscipit. Itaque, at fugit. Sequi quia corrupti officiis reprehenderit dicta minus similique? Asperiores fugit ea illum necessitatibus libero amet expedita, impedit officia porro quis eveniet eius, facilis voluptatem.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia corrupti eveniet inventore rem velit ipsum esse tempora vero optio placeat eaque dolorum expedita nihil molestias aperiam, quo non assumenda quos sint dolore suscipit. Itaque, at fugit. Sequi quia corrupti officiis reprehenderit dicta minus similique? Asperiores fugit ea illum necessitatibus libero amet expedita, impedit officia porro quis eveniet eius, facilis voluptatem.</p>
+      <article id="recipe"></article>
+      <section id="recipe-top">
+        <div id="above-img">
+          <div id="recipe-header">
+            <h1 id="recipe-title">Chocolate Pizza</h1>
+            <h4 class="uppercase">posted on 15 DEC 2013 / desserts</h4>
+          </div>
+          <div id="print">
+            <img id="print-icon" src="./img/print-icon.png" />
+            <p class="uppercase">PRINT</p>
+          </div>
+        </div>
+          <img id="cake-img" src="./img/choco-pizza.png" />
+        </div>
+      </section>
+      <article id="recipe-text">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+          corrupti eveniet inventore rem velit ipsum esse tempora vero optio
+          placeat eaque dolorum expedita nihil molestias aperiam, quo non
+          assumenda quos sint dolore suscipit. Itaque, at fugit. Sequi quia
+          corrupti officiis reprehenderit dicta minus similique? Asperiores
+          fugit ea illum necessitatibus libero amet expedita, impedit officia
+          porro quis eveniet eius, facilis voluptatem.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+          corrupti eveniet inventore rem velit ipsum esse tempora vero optio
+          placeat eaque dolorum expedita nihil molestias aperiam, quo non
+          assumenda quos sint dolore suscipit. Itaque, at fugit. Sequi quia
+          corrupti officiis reprehenderit dicta minus similique? Asperiores
+          fugit ea illum necessitatibus libero amet expedita, impedit officia
+          porro quis eveniet eius, facilis voluptatem.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+          corrupti eveniet inventore rem velit ipsum esse tempora vero optio
+          placeat eaque dolorum expedita nihil molestias aperiam, quo non
+          assumenda quos sint dolore suscipit. Itaque, at fugit. Sequi quia
+          corrupti officiis reprehenderit dicta minus similique? Asperiores
+          fugit ea illum necessitatibus libero amet expedita, impedit officia
+          porro quis eveniet eius, facilis voluptatem.
+        </p>
       </article>
       <div id="ingredients">
         <ul>
@@ -62,19 +91,30 @@
           <p>1 cup honey roasted pecans, roughly chopped</p>
         </ul>
       </div>
-      <hr>
-      <section id="profile">
-        <img src="./img/van-pic.png"/>
-        <h3>Vanessa Stevenson</h3>
-        <p>Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.</p>
-      </section>
-      <section id="recipe-link">
+    </article>
+    <hr />
+      <section id="profile-section">
+      <article id="profile">
+        <img class="van-img" src="./img/van-pic.png" />
+        <div id="text-image">
+          <h4 id="van-title">Vanessa Stevenson</h4>
+        <p id="van-p">
+          Food enthusiast, photography fan. Add a pinch of raw foodism and
+          that's pretty much who I am.
+        </p>
+      </div>
+      </article>
+      <div class="share">
         <button>SHARE RECIPE</button>
-      </section>
-    </main>
+      </div>
+    </section>
+  </main>
     <footer>
+      <img id="small-logo" src="./img/small-logo.png" />
+      <div id="footer-text">
       <p>Delicious &copy 2013. All Rights Reserved.</p>
       <p>Proudly published with Ghost.</p>
+    </div>
     </footer>
   </body>
 </html>
